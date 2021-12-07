@@ -1,0 +1,10 @@
+@use "../abstract" as abs;
+
+#hero {
+    margin-top: -110px;
+    img {
+        width: 100%;
+        height: 570px;
+        border-bottom: 10px solid abs.$secondary-color;
+    }
+}

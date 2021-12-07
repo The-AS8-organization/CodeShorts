@@ -1,0 +1,15 @@
+@use "../abstract" as abs;
+
+#about {
+    margin: 40px auto;
+    max-width: 600px;
+    
+    .info {
+        font-size: 18px;
+
+    }
+    #large {
+        color: abs.$secondary-color;
+        font-size: 40px;
+    }
+}

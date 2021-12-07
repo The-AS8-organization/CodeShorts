@@ -1,0 +1,12 @@
+@use "../abstract" as abs;
+
+#video, #contributor {
+    margin: 10px auto;
+    margin-bottom: 150px;
+    max-width: 600px;
+
+    .catagory {
+        padding: 40px auto;
+        margin: 20px auto;
+    }
+}
