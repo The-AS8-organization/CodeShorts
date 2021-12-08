@@ -16,7 +16,7 @@
             font-weight: lighter;
             padding: 3px 3px;
             margin: auto 25px;
-            border-bottom: 3px transparent abs.$fourth-color;
+            border-bottom: 3px hidden abs.$fourth-color;
 
             &:hover {
                 color: abs.$third-color;
@@ -33,7 +33,7 @@
     }
     
     .navbar-brand img {
-        width: 350px;
+        width: 300px;
         margin: 0px;
     }
     }
@@ -43,7 +43,7 @@
 @media screen and (max-width:462px) {
     .navbar {
         .navbar-brand img{
-            width: 320px;
+            width: 220px;
         }
     }
 }

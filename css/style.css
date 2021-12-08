@@ -11127,23 +11127,11 @@ body {
   font-size: 30px;
 }
 
-.section-head .change-color {
-  color: #cccccc;
-}
-
 a {
   text-decoration: none;
 }
 
-section {
-  margin-bottom: 200px;
-}
-
 @media screen and (max-width: 767px) {
-  section {
-    margin-bottom: 150px;
-  }
-
   .section-head {
     font-size: 30px;
   }
@@ -11164,7 +11152,7 @@ section {
   font-weight: lighter;
   padding: 3px 3px;
   margin: auto 25px;
-  border-bottom: 3px transparent #fff;
+  border-bottom: 3px hidden #fff;
 }
 
 .navbar .navbar-nav .nav-link:hover {
@@ -11178,13 +11166,28 @@ section {
   }
 
   .navbar .navbar-brand img {
-    width: 350px;
+    width: 300px;
     margin: 0px;
   }
 }
 @media screen and (max-width: 462px) {
   .navbar .navbar-brand img {
-    width: 320px;
+    width: 220px;
+  }
+}
+#hero {
+  margin-top: -130px;
+}
+
+#hero img {
+  width: 100%;
+  height: 570px;
+  border-bottom: 10px solid #ea4f4f;
+}
+
+@media screen and (max-width: 991px) {
+  #hero {
+    margin-top: -250px;
   }
 }
 #about {
@@ -11196,11 +11199,25 @@ section {
   font-size: 18px;
 }
 
+#about .info #anchor {
+  color: #000;
+}
+
+#about .info #anchor:hover {
+  color: #ea4f4f;
+}
+
 #about #large {
   color: #ea4f4f;
   font-size: 40px;
 }
 
+@media screen and (max-width: 462px) {
+  #about {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 #video, #contributor {
   margin: 10px auto;
   margin-bottom: 150px;
@@ -11209,14 +11226,44 @@ section {
 
 #video .catagory, #contributor .catagory {
   padding: 40px auto;
-  margin: 20px auto;
+  margin: 10px auto;
+  margin-top: 30px;
 }
 
+#video .subject-list, #contributor .subject-list {
+  display: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#video .subject-list .subject, #contributor .subject-list .subject {
+  list-style: none;
+  margin-bottom: 3px;
+}
+
+#video .subject-list .subject a, #contributor .subject-list .subject a {
+  color: #000;
+}
+
+#video .subject-list .subject a:hover, #contributor .subject-list .subject a:hover {
+  color: #ea4f4f;
+}
+
+@media screen and (max-width: 462px) {
+  #video, #contributor {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #video .subject .subject-list, #contributor .subject .subject-list {
+    margin-bottom: 5px;
+  }
+}
 .btn-secondary, .btn-primary {
   font-size: 18px;
-  background-color: #cccccc;
+  background-color: #ccc;
   color: #000;
-  border: none;
+  border: 2px solid #ccc;
   padding: 10px 10px;
 }
 
@@ -11225,32 +11272,21 @@ section {
 }
 
 .btn-secondary:hover, .btn-primary:hover {
-  color: #ea4f4f;
-  background-color: #000;
-}
-
-.btn-secondary:hover i, .btn-primary:hover i {
-  color: #ea4f4f;
+  border: 2px solid #ea4f4f;
+  color: #000;
+  background-color: #ccc;
 }
 
 .btn-secondary {
   background-color: #ea4f4f;
   color: #fff;
+  border: 2px solid #ea4f4f;
 }
 
-.bicon {
-  color: #cccccc;
-  padding-right: 5px;
-}
-
-#hero {
-  margin-top: -110px;
-}
-
-#hero img {
-  width: 100%;
-  height: 570px;
-  border-bottom: 10px solid #ea4f4f;
+.btn-secondary:hover {
+  border: 2px solid #000;
+  background-color: #ea4f4f;
+  color: #fff;
 }
 
 footer {
@@ -11260,7 +11296,7 @@ footer {
 
 footer #footer-start {
   height: 5px;
-  color: #cccccc;
+  color: #ccc;
   opacity: 100;
 }
 
@@ -11273,20 +11309,22 @@ footer #social li {
   list-style: none;
   margin: 10px 15px;
   background-color: #ea4f4f;
+  border: 2px solid #ea4f4f;
   border-radius: 50%;
   height: 50px;
   width: 50px;
 }
 
 footer #social li a {
-  margin-top: 8px;
-  margin-left: 12px;
+  margin-top: 6px;
+  margin-left: 11px;
   color: #fff;
   font-size: 25px;
 }
 
 footer #social li:hover {
-  background-color: #000;
+  background-color: #fff;
+  border: 2px solid #000;
 }
 
 footer #social li:hover a {
@@ -11307,7 +11345,7 @@ footer #org-name .org-color-name {
 }
 
 footer #org-name .org-color-name:hover {
-  color: #000;
+  color: #ea4f4f;
 }
 
 footer #allright {
