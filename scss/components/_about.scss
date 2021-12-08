@@ -7,9 +7,24 @@
     .info {
         font-size: 18px;
 
+        #anchor {
+            color: abs.$third-color;
+
+            &:hover {
+                color: abs.$secondary-color;
+            }
+        }
+
     }
     #large {
         color: abs.$secondary-color;
         font-size: 40px;
+    }
+}
+
+@media screen and (max-width:462px) {
+    #about {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }

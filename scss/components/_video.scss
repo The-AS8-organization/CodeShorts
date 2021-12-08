@@ -7,6 +7,36 @@
 
     .catagory {
         padding: 40px auto;
-        margin: 20px auto;
+        margin: 10px auto;
+        margin-top: 30px;
+    }
+
+    .subject-list {
+        display: none;
+        margin: 0px;
+        padding: 0px;
+        .subject {
+            list-style: none;
+            margin-bottom: 3px;
+
+                a {
+                    color: abs.$third-color;
+
+                    &:hover {
+                        color: abs.$secondary-color;
+                    }
+                }
+        }
+    }
+}
+
+@media screen and (max-width:462px) {
+    #video, #contributor {
+        padding-left: 5px;
+        padding-right: 5px;
+
+        .subject .subject-list{
+            margin-bottom: 5px;
+        }   
     }
 }
